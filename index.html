@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section id="main">
+        <div class="container">
+            <h1>Cruds</h1>
+            <div id="input-field" class="py-2">
+                <div class="form-container">
+                    <div class="form-floating">
+                        <input type="text" id="name" name="name">
+                        <label for="name">Proudact Name</label>
+                    </div>
+                    <div class="form-alert">not valid dont use length(3-20) *-/\ &^%</div>
+                </div>
+                <div class="form-container">
+                    <div class="form-floating">
+                        <input type="text" id="category" name="category">
+                        <label for="category">Proudact Category</label>
+                    </div>
+                    <div class="form-alert">not valid dont use length(3-20) *-/\ &^%</div>
+                </div>
+                <div class="form-container">
+                    <div class="form-floating">
+                        <input type="text" id="price" name="price">
+                        <label for="price">Proudact Price</label>
+                    </div>
+                    <div class="form-alert">not valid dont use charcter</div>
+                </div>
+                <div class="form-container">
+                    <div class="form-floating">
+                        <input type="text" id="description" name="description">
+                        <label for="description">Proudact Description</label>
+                    </div>
+                    <div class="form-alert">not valid</div>
+                </div>
+                <div class="form-group">
+                    <div class="d-flex justify-content-between flex-wrap ">
+                        <button id="addBtn" type="button" class="button m-2">add product</button>
+                        <div class="check-true m-2 d-none"><i class="fas fa-check"></i></div>
+                        <div class="check-false m-2 d-none"><i class="fas fa-times"></i></div>
+                        <button id="hideShowBtn" type="button" class="button m-2">Hide Record</button>
+                    </div>
+                </div>
+            </div>
+            <div id="table" class="">
+                <div class="form-group w-25 ml-auto">
+                    <input id="search" type="text" placeholder="Search" class="form-control">
+                </div>
+                <div id="tableHead" class="row">
+                    <div class="col-1">ID</div>
+                    <div class="col-2">Name</div>
+                    <div class="col-2">Category</div>
+                    <div class="col-2">Price</div>
+                    <div class="col-4 ">Description</div>
+                    <div class="col-1"></div>
+                </div>
+                <div id="tableBody"></div>
+
+                <nav id="Page-pagination" class="d-flex justify-content-center">
+                    <ul class="pagination"></ul>
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
